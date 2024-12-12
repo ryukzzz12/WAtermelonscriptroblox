@@ -770,7 +770,7 @@ function library:Introduction()
     hashLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
     hashLogo.Size = UDim2.new(0, 150, 0, 150)
     hashLogo.Visible = true
-    hashLogo.Image = "http://www.roblox.com/asset/?id=9365069861"
+    hashLogo.Image = "http://www.roblox.com/asset/?id=127049115007097"
     hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
     
@@ -805,12 +805,7 @@ function library:Introduction()
     pageLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 
     CreateTween("xsxRotation", 0)
-    local MinusAmount = -16
-    coroutine.wrap(function()
-        while wait() do
-            MinusAmount = MinusAmount + 0.4
-            TweenService:Create(xsxLogo, TweenTable["xsxRotation"], {Rotation = xsxLogo.Rotation - MinusAmount}):Play()
-        end
+
     end)()
 
     TweenService:Create(edge, TweenTable["introduction"], {BackgroundTransparency = 0}):Play()
